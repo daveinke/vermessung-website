@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [isMenuOpen]); // Fügen Sie isMenuOpen als Abhängigkeit hinzu
 
   return (
-    <header className='bg-white/20 backdrop-blur-md shadow-sm text-2xl font-bold font-display absolute top-5 left-0 right-0 z-50 rounded-2xl w-[94%] mx-auto'>
+    <header className='bg-white/20 backdrop-blur-md shadow-sm text-2xl font-bold font-display fixed top-5 left-0 right-0 z-50 rounded-2xl w-[94%] mx-auto'>
       <nav>
         <div className='flex items-center justify-between w-[90%] mx-auto my-2'>
           <Link to="/" className='text-xl font-bold text-gray-800'>
@@ -38,13 +38,13 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <ul className='flex items-center gap-11 max-lg:hidden'>
             <li>
-              <Link to="/" className='text-gray-600 hover:text-gray-900 transition-colors'>
+              <Link to="/" className='text-gray-900 hover:text-gray-600 transition-colors'>
                 Home
               </Link>
             </li>
             <li>
               <div className="relative group">
-                <button className="text-gray-600 hover:text-gray-900">
+                <button className="text-gray-900 hover:text-gray-600">
                   Leistungen
                 </button>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <Link to="/kontakt" className='text-gray-600 hover:text-gray-900 transition-colors'>
+              <Link to="/kontakt" className='text-gray-900 hover:text-gray-600 transition-colors'>
                 Kontakt
               </Link>
             </li>
@@ -126,7 +126,6 @@ const Navbar = () => {
 
           </div>
         </div>
-        <div></div>
       </nav>
     </header>
   );
