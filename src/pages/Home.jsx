@@ -12,8 +12,8 @@ export default function Home() {
           <div className="flex flex-col items-center pt-35 gap-2">
             <div className="w-[1200px] h-[600px] rounded-xl bg-[url('/src/assets/hero2.jpg')] bg-cover bg-bottom shadow-[0px_0px_25px_rgba(0,0,0,1)]">
               <div className="w-full h-full bg-black/30 rounded-xl flex justify-center">
-                <h1 className="text-5xl font-bold font-display text-center text-white 
-                [text-shadow:_-1px_0_0_#4b5563,_0_-1px_0_#4b5563,_1px_0_0_#4b5563,_0_1px_0_#4b5563,_-1px_-1px_0_#4b5563,_1px_-1px_0_#4b5563,_-1px_1px_0_#4b5563,_1px_1px_0_#4b5563] pt-10">
+                <h1 className="text-6xl font-bold font-display text-white 
+                [text-shadow:_-1px_0_0_#4b5563,_0_-1px_0_#4b5563,_1px_0_0_#4b5563,_0_1px_0_#4b5563,_-1px_-1px_0_#4b5563,_1px_-1px_0_#4b5563,_-1px_1px_0_#4b5563,_1px_1px_0_#4b5563] relative top-20 left-40">
                   Ihr Partner für Vermessung
                 </h1>
               </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
               <div className="flex justify-center gap-8 mt-12">
                 {/* Card für Amtliche Vermessung */}
-                <div className="bg-white rounded-xl shadow-lg p-6 w-[600px] border-2 border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-xl shadow-[0px_0px_20px_rgba(0,0,0,0.2)] p-6 w-[600px] border-2 border-gray-200 hover:shadow-[0px_0px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Amtliche Vermessung</h3>
                   <p className="text-gray-700 mb-6">
                     Wir führen sämtliche amtliche Vermessungsarbeiten durch, die für Grundstücksteilungen,
@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
 
                 {/* Card für Bauvermessung */}
-                <div className="bg-white rounded-xl shadow-lg p-6 w-[600px] border-2 border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white rounded-xl shadow-[0px_0px_20px_rgba(0,0,0,0.2)] p-6 w-[600px] border-2 border-gray-200 hover:shadow-[0px_0px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Bauvermessung</h3>
                   <p className="text-gray-700 mb-6">
                     Von der Absteckung bis zur Baubegleitung bieten wir alle notwendigen
@@ -77,36 +77,35 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-between text-gray-900 relative z-10 pt-10">
-                <p>
-                  Käthe-Kollwitz-Ring 45, 76676 Graben-Neudorf <br />
-                  Tel:   07255/7681450 <br />
-                  Mobil: 015771458875
-                </p>
-                <div className="flex items-center">
-                  <p>
-                    Email: kontakt@vermessung-starzec.de
-                  </p>
-                </div>
-                <div className="flex items-center">
-                  <Link
-                    to="/kontakt"
-                    className="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold 
-                    hover:bg-gray-700 transition-colors duration-300 
-                    shadow-lg hover:shadow-xl active:scale-95 transform cursor-pointer"
-                  >
-                    Kontaktieren Sie uns
-                  </Link>
-                </div>
-              </div>
+
+
 
             </section>
+            <div className="flex justify-between text-gray-900 relative w-[90.3%] mx-auto z-10 mt-10 p-4 border-2 border-gray-200 bg-white rounded-xl mb-10">
+              <p>
+                Käthe-Kollwitz-Ring 45, 76676 Graben-Neudorf <br />
+                Tel:   07255/7681450 <br />
+                Mobil: 015771458875
+              </p>
+              <div className="flex items-center">
+                <p>
+                  Email: kontakt@vermessung-starzec.de
+                </p>
+              </div>
+              <div className="flex items-center">
+                <Link
+                  to="/kontakt"
+                  className="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold 
+                    hover:bg-gray-700 transition-colors duration-300 
+                    shadow-lg hover:shadow-xl active:scale-95 transform cursor-pointer"
+                >
+                  Kontaktieren Sie uns
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Second full-height section with radial gradient */}
-
     </main>
   )
 } 

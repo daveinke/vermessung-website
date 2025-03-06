@@ -6,11 +6,13 @@ import AmtlicheVermessung from './pages/AmtlicheVermessung'
 import Bauvermessung from './pages/Bauvermessung'
 import Kontakt from './pages/Kontakt'
 import Navbar from './sections/Navbar'
+import Footer from './sections/Footer'
 
 function App() {
   return (
     <Router>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/leistungen" element={<Leistungen />} />
@@ -18,7 +20,9 @@ function App() {
         <Route path="/leistungen/bauvermessung" element={<Bauvermessung />} />
         <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
+      <Footer />
     </Router>
+
   )
 }
 
