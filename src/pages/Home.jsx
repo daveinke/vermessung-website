@@ -8,8 +8,8 @@ export default function Home() {
         <div className="absolute h-full w-full flex items-center justify-center bg-[radial-gradient(circle_500px,_rgba(200,200,200,0.7)_0%,_rgba(0,0,0,0)_200%)] -z-10">
           {/* Div für den Hintergrund mit Kreis*/}
         </div>
-        <div className="h-full w-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:100px_200px]">
-          <div className="flex flex-col items-center pt-35 gap-2">
+        <div className="w-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:100px_200px]">
+          <div className="flex flex-col items-center pt-27 gap-2">
             <div className="w-[1200px] h-[600px] rounded-xl bg-[url('/src/assets/hero2.jpg')] bg-cover bg-bottom shadow-[0px_0px_25px_rgba(0,0,0,1)]">
               <div className="w-full h-full bg-black/30 rounded-xl flex justify-center">
                 <h1 className="text-6xl font-bold font-display text-white 
@@ -20,10 +20,10 @@ export default function Home() {
             </div>
 
             <section>
-              <p className="text-gray-900 text-2xl pt-5">
+              <p className="text-gray-900 text-2xl">
                 Als kompetenter Partner bieten wir ein umfassendes Leistungsspektrum in allen Vermessungsaufgaben.<br />
                 Privaten Kunden, Bauherren, Architekten, Erschließungsträgern, Kommunen und Behörden stehen wir mit Rat und Tat zur Seite. <br />
-                <div className='font-bold pt-2'>Dipl.-Ing. Thomas Starzec<br />
+                <div className='font-bold'>Dipl.-Ing. Thomas Starzec<br />
                   Öffentlich bestellter Vermessungsingenieur
                 </div>
 

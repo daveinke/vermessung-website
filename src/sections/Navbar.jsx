@@ -28,11 +28,11 @@ const Navbar = () => {
   }, [isMenuOpen]); // Fügen Sie isMenuOpen als Abhängigkeit hinzu
 
   return (
-    <header className='bg-white/20 backdrop-blur-md text-2xl font-bold font-display fixed top-5 left-0 right-0 z-50 rounded-2xl w-[90.3%] mx-auto border-2 border-gray-200 shadow-[0px_0px_20px_rgba(0,0,0,0.4)]'>
+    <header className='bg-white/20 backdrop-blur-md text-2xl font-bold font-display fixed top-2 left-0 right-0 z-50 rounded-2xl w-[90.3%] mx-auto border-2 border-gray-200 shadow-[0px_0px_20px_rgba(0,0,0,0.4)]'>
       <nav>
         <div className='flex items-center justify-between w-[90.3%] mx-auto'>
           <Link to="/" className='text-xl font-bold text-gray-800'>
-            <img src="./src/assets/logoremove.png" alt="Logo" className='h-25 rounded-2xl mix-blend-color-dodge' />
+            <img src="./src/assets/logoremove.png" alt="Logo" className='h-22 rounded-2xl mix-blend-color-dodge' />
           </Link>
 
           {/* Desktop Navigation */}
